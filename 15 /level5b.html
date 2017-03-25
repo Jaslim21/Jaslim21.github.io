@@ -8,23 +8,144 @@
 
   <style media="screen">
 
-  body {
-    background-image: url(http://img.pandawhale.com/post-30366-pocahontas-10000-done-gif-NJ8G.gif);
-    background-repeat:repeat;
-    background-size: 40%;
-    background-position: top;
-      -webkit-transform: rotate(30deg);
-      -moz-transform: rotate(30deg);
-      -ms-transform: rotate(30deg);
-      -o-transform: rotate(30deg);
-      transform: rotate(30deg);
-}
 
+
+  p {
+    float:right;
+    width:100px;
+  }
+
+  .main {
+      width: 200px;
+      height: 200px;
+      position: relative;
+
+  }
+
+  .main:after {
+      width: 100%;
+      height: 100%;
+      position:absolute;
+      background: url("http://img.pandawhale.com/post-30366-pocahontas-10000-done-gif-NJ8G.gif");
+      background-size: cover;
+      content: '';
+      -webkit-animation: spinX 3s infinite;
+      animation: spinX 3s infinite;
+  }
+
+  @-webkit-keyframes spinX
+  {
+  0%   {-webkit-transform: rotateX(0deg); -webkit-transform-origin: 0% 50% 0;}
+  100% {-webkit-transform: rotateX(360deg); -webkit-transform-origin: 0% 50% 0;}
+  }
+  @keyframes spinX
+  {
+  0%   {transform: rotateX(0deg); transform-origin: 0% 50% 0;}
+  100% {transform: rotateX(360deg); transform-origin: 0% 50% 0;}
+  }
+
+  .gif2 {
+    margin-left: 500px;
+      width: 200px;
+      height: 200px;
+      position: relative;
+
+  }
+
+  .gif2:after {
+      width: 100%;
+      height: 100%;
+      position:absolute;
+      background: url("https://media.tenor.co/images/6af971ce51053d876e3fa382d62fb6a3/tenor.gif");
+      background-size: cover;
+      content: '';
+      -webkit-animation: spinX 3s infinite;
+      animation: spinX 3s infinite;
+  }
+
+  @-webkit-keyframes spinX
+  {
+  0%   {-webkit-transform: rotateX(0deg); -webkit-transform-origin: 0% 50% 0;}
+  100% {-webkit-transform: rotateX(360deg); -webkit-transform-origin: 0% 50% 0;}
+  }
+  @keyframes spinX
+  {
+  0%   {transform: rotateX(0deg); transform-origin: 0% 50% 0;}
+  100% {transform: rotateX(360deg); transform-origin: 0% 50% 0;}
+  }
+  .button {
+    float:right;
+    border-radius: 4px;
+    background-color: #F3A6A6;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
   </style>
 
 
   <body>
-make mistakes.
+
+<p>get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done get other things done</p>
+
+  <div class="main"></div>
+    <div class="gif2"></div>
+  <div class="main"></div>
+    <div class="gif2"></div>
+  <div class="main"></div>
+    <div class="gif2"></div>
+  <div class="main"></div>
+    <div class="gif2"></div>
+  <div class="main"></div>
+    <div class="gif2"></div>
+  <div class="main"></div>
+    <div class="gif2"></div>
+  <div class="main"></div>
+    <div class="gif2"></div>
+  <div class="main"></div>
+    <div class="gif2"></div>
+
+
+    <br>
+    <a href="level5c.html">
+    <button class="button" style="vertical-align:middle"><span>Next </span></button> </a>
+    <br>
+    <br>
+    <br>
+    <a href="index.html">Return to index</a>
+    <br>
+
   </body>
 </html>
