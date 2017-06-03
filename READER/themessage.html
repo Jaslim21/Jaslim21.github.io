@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Medium is  the Message</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+	</head>
+
+<style media="screen">
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.menuoverlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.6s;
+}
+
+.menuoverlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menuoverlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.menuoverlay a:hover, .menuoverlay a:focus {
+    color: #f1f1f1;
+}
+
+.menuoverlay .closebtn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .menuoverlay {overflow-y: auto;}
+  .menuoverlay a {font-size: 20px}
+  .menuoverlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("http://img.freepik.com/free-photo/grainy-gradient-background_1194-7599.jpg?size=338&ext=jpg");
+  height: 100%;
+}
+
+.video {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+
+}
+
+
+	.title {
+			font-family: times;
+			text-align:center;
+			font-size: 30pt;
+		}
+	.marshallmcluhan {
+
+		font-family: times;
+		font-size: 15pt;
+		float: right;
+		position: fixed;
+		bottom: 80px;
+		right: 565px;
+		color:white;
+	}
+
+	.container {
+	  position: relative;
+	  width: 100%;
+	}
+
+	.box {
+	  display: block;
+	  width: 100px;
+	  height: 100px;
+	}
+
+	.overlay {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background-color: #5f6063;
+	  overflow: hidden;
+	  width: 0;
+	  height: 100%;
+	  transition: .8s ease;
+	}
+
+	.container:hover .overlay {
+	  width: 100%;
+	}
+
+	.text {
+	  white-space: nowrap;
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  overflow: hidden;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	}
+
+</style>
+
+
+
+	<body>
+		<div id="myNav" class="menuoverlay">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <div class="menuoverlay-content">
+		    <a href="themessage.html">1977</a>
+		    <a href="jonathanblow.html">2013</a>
+		    <a href="50.html">2014</a>
+		
+		  </div>
+		</div>
+
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+		<script>
+		function openNav() {
+		    document.getElementById("myNav").style.height = "100%";
+		}
+
+		function closeNav() {
+		    document.getElementById("myNav").style.height = "0%";
+		}
+		</script>
+
+
+	<div class="bgimg-1">
+	  <div class="video">
+	    <span class="border"><iframe width="560" height="315" src="https://www.youtube.com/embed/ImaH51F4HBw" frameborder="0" allowfullscreen></iframe></span>
+			<br>
+
+	  </div>
+	</div>
+
+
+
+</br>
+
+		<div class="title"> The Medium Is The Message </div>
+
+
+		<div class="container">
+		  <div class="box"></div>
+		  <div class="overlay">
+				<a href="50.html" class="nextpage" title="link la"> <div class="text">50 Years Later</div></a>
+
+		  </div>
+		</div>
+
+
+</br>
+		<div class="marshallmcluhan"> Marshall McLuhan</div>
+		</br>
+		</br>
+
+
+		<a href="page2.html" class="nextpage" title="50years"></a>
+
+	</body>
+</html>
